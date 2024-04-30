@@ -82,7 +82,7 @@ app.delete('/tasks/:id', async(req, res) =>{
 
 mongoose.set("strictQuery", false)
 mongoose.
-connect('mongodb+srv://admin:12345678Admin@devtaminapi.zpncstm.mongodb.net/Node-API?retryWrites=true&w=majority')
+connect('mongodb+srv://rajatjain3276:5Gm2v6VUENyxTlZX@cluster0.ucgaxdp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
 .then(() => {
     console.log('connected to MongoDB')
     app.listen(3000, ()=> {
