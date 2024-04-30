@@ -6,6 +6,10 @@ Create, update, retrieve, and delete tasks.
 
 Endpoints
 
+set-up - npm install
+
+start - npm start
+
 POST /tasks: Create a new task.
 GET /task: Retrieve all tasks.
 GET /task/:id  :GET BY ID
