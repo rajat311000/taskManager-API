@@ -80,14 +80,11 @@ app.delete('/tasks/:id', async(req, res) =>{
     }
 })
 
-mongoose.set("strictQuery", false)
-mongoose.
-connect('mongodb+srv://rajatjain3276:5Gm2v6VUENyxTlZX@cluster0.ucgaxdp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
-.then(() => {
-    console.log('connected to MongoDB')
-    app.listen(3000, ()=> {
-        console.log(`Node API app is running on port 3000`)
-    });
-}).catch((error) => {
-    console.log(error)
-})
+const db = 'mongodb+srv://rajatjain3276:zFFlJcI5bTrQFtWe@cluster0.ucgaxdp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
+mongoose
+    .connect(db, { 
+        useNewUrlParser: true
+      })
+    .then(() => console.log('MongoDB connected...'))
+    .catch(err => console.log(err));
+
